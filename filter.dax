@@ -1,0 +1,4 @@
+Total Productive Hours = SUMX(
+    Filter('MachineData', 'MachineData'[Downtime] == 0),
+    'MachineData'[ProductionRate] * 1  -- Assuming each row represents one hour
+)
